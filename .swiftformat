@@ -1,0 +1,9 @@
+# https://github.com/nicklockwood/SwiftFormat
+# https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-swiftformat
+
+# format options
+--allman true
+--indent tab # tabs FTW!
+
+# file options
+--exclude Pods,Generated,.build,build

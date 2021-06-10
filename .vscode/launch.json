@@ -1,0 +1,46 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // https://www.vknabel.com/pages/Debugging-Swift-in-VS-Code/
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Run",
+            "program": "${workspaceFolder}/.build/debug/${workspaceFolderBasename}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "swift-build"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Tests",
+            "program": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+            "args": [
+                "${workspaceFolder}/.build/debug/${workspaceFolderBasename}PackageTests.xctest"
+            ],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "swift-tests"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug tests on macOS",
+            "program": "/Applications/Xcode.app/Contents/Developer/usr/bin/xctest",
+            "args": [
+                "${workspaceFolder}/.build/debug/${workspaceFolderBasename}PackageTests.xctest",
+            ],
+            "preLaunchTask": "swift-build-tests"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug tests on Linux",
+            "program": "./.build/x86_64-apple-macosx/debug/${workspaceFolderBasename}PackageTests.xctest",
+            "preLaunchTask": "swift-build-tests"
+        }
+    ]
+}

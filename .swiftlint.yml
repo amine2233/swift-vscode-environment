@@ -1,0 +1,9 @@
+# https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-swiftlint
+# https://github.com/realm/SwiftLint
+
+included:
+  - Sources
+
+excluded:
+  - .build/
+  - build/

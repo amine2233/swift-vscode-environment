@@ -1,0 +1,28 @@
+{
+    "swift.targets": [
+        {
+            "name": "${workspaceFolderBasename}",
+            "path": "Sources/${workspaceFolderBasename}",
+            "sources": [
+                "**/*.swift"
+            ],
+            "compilerArguments": []
+        }
+    ],
+    "swift-coverage.coverageFilePattern": "**/.build/debug/{coverage,codecov}/*.json",
+    "swift-coverage.highlightsCoveredText": true,
+    "swiftlint.enable": true,
+    "swiftlint.forceExcludePaths": [
+        "tmp",
+        "build",
+        ".build",
+        "Pods",
+        "Carthage"
+    ],
+    "swiftlint.autoLintWorkspace": true,
+    "swiftformat.enable": true,
+    "swiftformat.configSearchPaths": [
+        ".swiftformat"
+    ],
+    "editor.formatOnSave": true
+}
