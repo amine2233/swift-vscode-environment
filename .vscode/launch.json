@@ -39,7 +39,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "Debug tests on Linux",
-            "program": "./.build/x86_64-apple-macosx/debug/${workspaceFolderBasename}PackageTests.xctest",
+            "program": "./.build/x86_64-unknown-linux-gnu/debug/${workspaceFolderBasename}PackageTests.xctest",
             "preLaunchTask": "swift-build-tests"
         }
     ]

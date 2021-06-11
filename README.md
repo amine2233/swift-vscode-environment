@@ -26,3 +26,7 @@ swift package init --type executable
 * [Swift, VS Code and you](https://www.vknabel.com/pages/Swift-VS-Code-and-you/)
 * [Debugging Swift in VS Code](https://www.vknabel.com/pages/Debugging-Swift-in-VS-Code/)
 * [Variables reference on visual studio code](https://code.visualstudio.com/docs/editor/variables-reference)
+
+## DevContainer
+
+We use Swift 5.4 inside the container, you can run all the project between MacOs/Linux
